@@ -251,7 +251,7 @@ public class ArrayInteger {
 
 
     // The method returns a integer value - an amount all elements of the array.
-    public int getAmountOfAllElements () {
+    public int getAmount () {
         int amount = 0;
         for (int i = 0; i < array.length; i++) {
             amount+=array[i];
@@ -284,5 +284,27 @@ public class ArrayInteger {
             if (min > array[i]) min = array[i];
         }
         return max-min;
+    }
+    
+    
+    
+    // The method returns a integer value - product of all numbers of the array.
+    public int getProduct () {
+        int product = array[0];
+        for (int i = 1; i < array.length; i++) {
+            product*=array[i];
+        }
+        return product;
+    }
+
+
+
+    // The method returns a integer value - product of numbers from [fPos] to [lPos] positions of the array.
+    public int getProduct (int fPos, int lPos) {
+        int product = array[fPos];
+        for (int i = fPos+1; i <= lPos; i++) {
+            product*=array[i];
+        }
+        return product;
     }
 }
