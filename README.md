@@ -25,9 +25,11 @@ ArrayInteger находиться в пакете 'ArrayInteger'. Его мож�
 21) replaceFisrt();
 22) replaceLast();
 23) indexOf();
-24) getAmountOfAllElements();
-25) getAmount();
+24) getAmount();
+25) getAmount(int fPos, int lPos);
 26) getRange();
+27) getProduct();
+28) getProduct(int fPos, int lPos);
 
 Список принимает в себя int'овые значение и поэтому я добавил сюда ряд методов, которые служат помощью среди чисельных значений.
 Это - getMax(), getMin(), getRange() и пр.
