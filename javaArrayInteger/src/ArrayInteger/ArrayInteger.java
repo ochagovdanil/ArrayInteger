@@ -75,15 +75,8 @@ public class ArrayInteger {
     // The method removes a element[index].
     public void remove (int index) {
         if (index == 0) {
-            int[] array2 = new int[array.length-1];
-            for (int i = 0; i < array.length; i++) {
-                if (i == 0) {
-                    continue;
-                }
-                else {
-                    array2[i-1] = array[i];
-                }
-            }
+           int[] array2 = new int[array.length-1];
+            System.arraycopy(array, 1, array2, 0, array2.length);
             array = array2;
         }
         else if (index == array.length-1) {
