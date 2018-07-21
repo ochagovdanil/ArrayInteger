@@ -77,14 +77,12 @@ public class ArrayInteger {
         if (index == 0) {
            int[] array2 = new int[array.length-1];
             System.arraycopy(array, 1, array2, 0, array2.length);
-            array = array2;
         }
         else if (index == array.length-1) {
             int[] array2 = new int[array.length-1];
             for (int i = 0; i < array.length-1; i++) {
                 array2[i] = array[i];
             }
-            array = array2;
         }
         else {
             int[] array2 = new int[array.length-1];
@@ -99,8 +97,8 @@ public class ArrayInteger {
                     array2[i] = array[i];
                 }
             }
-            array = array2;
         }
+         array = array2;
     }
 
 
