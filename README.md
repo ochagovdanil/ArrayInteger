@@ -32,4 +32,4 @@ ArrayInteger находиться в пакете 'ArrayInteger'. Его мож�
 > Это - getMax(), getMin(), getRange() и пр.
 
 # Author
-_Danil Ochagov [(ochagovdanil)](https://github.com/ochagovdanil).__
+_Danil Ochagov [(ochagovdanil)](https://github.com/ochagovdanil)._
